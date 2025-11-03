@@ -1,0 +1,126 @@
+/* Banner CTA - Call-to-action banner with card and grid layout */
+
+.banner-cta {
+  padding: 64px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card wrapper with border and shadow */
+.banner-cta-card {
+  border-radius: 20px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 2px, rgba(0, 0, 0, 0.2) 6px 6px 0px 0px;
+  padding: 32px;
+  background-color: transparent;
+}
+
+/* Grid container */
+.banner-cta-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+/* Text container - flex for heading and paragraph */
+.banner-cta-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+/* Heading - styled as large text */
+.banner-cta-heading {
+  font-size: 28px;
+  font-family: var(--heading-font-family);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.28px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  text-transform: lowercase;
+}
+
+/* Paragraph */
+.banner-cta p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+/* Button */
+.banner-cta a.button {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  padding: 16px 24px;
+  border-radius: 1600px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 2px inset, rgba(244, 254, 139, 0.5) 4px 4px 0px 0px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.banner-cta a.button:hover {
+  opacity: 0.9;
+}
+
+/* Tablet */
+@media (width >= 600px) {
+  .banner-cta {
+    padding: 80px 32px;
+  }
+
+  .banner-cta-heading {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+  }
+
+  .banner-cta p {
+    font-size: 18px;
+  }
+}
+
+/* Desktop */
+@media (width >= 900px) {
+  .banner-cta {
+    padding: 96px 48px;
+  }
+
+  /* Grid layout: 3 columns */
+  .banner-cta-grid {
+    grid-template-columns: 346.664px 346.664px 346.664px;
+    gap: 32px;
+  }
+
+  /* Text container spans first 2 columns */
+  .banner-cta-text {
+    grid-column: span 2;
+  }
+
+  /* Button in 3rd column, aligned to bottom-right */
+  .banner-cta a.button {
+    grid-column: 3;
+    align-self: end;
+    justify-self: end;
+  }
+
+  .banner-cta-heading {
+    font-size: 45.28px;
+    line-height: 47.0912px;
+    letter-spacing: -0.4528px;
+  }
+
+  .banner-cta p {
+    font-size: 18.08px;
+    line-height: 28.928px;
+  }
+}
