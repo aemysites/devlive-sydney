@@ -106,11 +106,11 @@
     grid-column: span 2;
   }
 
-  /* Button in 3rd column, aligned to bottom-right */
+  /* Button in 3rd column, aligned to bottom-center */
   .banner-cta a.button {
     grid-column: 3;
     align-self: end;
-    justify-self: end;
+    justify-self: center;
   }
 
   .banner-cta-heading {
