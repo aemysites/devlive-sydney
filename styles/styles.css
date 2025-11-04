@@ -307,7 +307,7 @@ main .section.highlight {
   padding: var(--section-padding);
 }
 
-main .section.grey {
+main .section.grey, main .section.secondary {
   background-color: var(--light-color);
   color: var(--text-color);
   margin: 0;
