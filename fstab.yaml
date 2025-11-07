@@ -1,4 +1,4 @@
 mountpoints:
   /:
-    url: https://content.da.live/paolomoz/devlive-sydney/
+    url: https://content.da.live/aemysites/devlive-sydney/
     type: markup
